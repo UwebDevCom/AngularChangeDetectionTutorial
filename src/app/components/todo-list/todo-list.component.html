@@ -3,7 +3,7 @@
     <h2>YOUR TODO'S LIST</h2>
 </div>
 <ul>
-    <li *ngFor="let todo of (todos | filterByStatus: statusNew); let index = index">
+    <li *ngFor="let todo of (todos | async); let index = index">
         <label class="container">
             <span>{{todo.text}}</span>
             <input (change)="moveToDone(todo.id)" type="checkbox">

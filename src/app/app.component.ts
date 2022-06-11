@@ -34,8 +34,9 @@ export class AppComponent implements OnInit, DoCheck, AfterViewChecked, OnDestro
   };
 
   ngOnInit(){
-    this.todos = this.todosService.todos; 
-    
+    this.todosService.init(); 
+    this.todos = this.todosService.todos
+
     this.timer = setInterval(()=> {
       this.time = new Date().toLocaleTimeString();
       this.cdr.detectChanges();
