@@ -7,17 +7,13 @@ import { HandleListService } from 'src/app/handle-list.service';
   selector: 'app-done-list',
   templateUrl: './done-list.component.html',
   styleUrls: ['./done-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DoneListComponent implements OnInit, DoCheck{
+export class DoneListComponent implements OnInit{
   
   @Input() todos: ITodos[];
   public statusDone : StatusTodo = StatusTodo.DONE;
   constructor(private todosService : HandleListService, private cdr: ChangeDetectorRef) { }
-
-  ngDoCheck() {
-    // this.cdr.detectChanges();
-  }
   
   ngOnInit(): void {
   }

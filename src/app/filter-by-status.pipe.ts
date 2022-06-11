@@ -6,7 +6,6 @@ import { ITodos, StatusTodo } from './app.component';
   pure: false
 })
 export class FilterByStatusPipe implements PipeTransform {
-
   transform(value: ITodos[], byStatus: StatusTodo): ITodos[] {
     return value.filter(item => item.status === byStatus);
   }

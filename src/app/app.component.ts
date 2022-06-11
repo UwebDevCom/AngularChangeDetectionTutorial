@@ -16,7 +16,7 @@ export interface ITodos {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit, DoCheck, AfterViewChecked, OnDestroy {
   
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, DoCheck, AfterViewChecked, OnDestro
  
   ngDoCheck() {
    if(this.counter < this.todos.length) {
-      this.counter = this.todos.length;
+      this.todos = this.todosService.todos;
     }
   };
 

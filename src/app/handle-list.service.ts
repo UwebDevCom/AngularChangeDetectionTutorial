@@ -9,6 +9,8 @@ export class HandleListService {
   public todos: ITodos[] = [
     {text: 'Buy a gold fish.', id:67987 , status: StatusTodo.NEW},
     {text: 'To make the laundry.', id:97867565 , status: StatusTodo.NEW},
+    {text: 'To make the laundry.', id:54767 , status: StatusTodo.NEW},
+    {text: 'To make the laundry.', id:678675 , status: StatusTodo.NEW},
     {text: 'See a movie with Ben.', id:486769 , status: StatusTodo.DONE}
   ];
 
