@@ -1,0 +1,39 @@
+:host  {
+    display: block;
+    height: 100%;
+}
+main {
+    height: 100%;
+}
+.container {
+    display:flex;
+    section.add-todo-container {
+        flex: 1;
+        background-image: url('/assets/1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        > * {
+            margin: auto;
+        }
+        .clock {
+            display: block;
+            margin: 20px;
+            font-size: 28px;
+            color: #fff;
+        }
+    }
+    section.list-container {
+        position: relative;
+        animation: initSlideLeft 1s ease-in-out;
+        flex: 1;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}
+
+@keyframes initSlideLeft {
+    0% {max-width: 0;}
+    100% {max-width: 50%;}
+}

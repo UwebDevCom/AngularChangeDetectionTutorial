@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "change-detect-tut"
+    }
+  },
+  "defaultProject": "change-detect-tut",
+  "cli": {
+    "analytics": "1c73e367-5003-476d-bae6-8fad420a3135"
+  }
 }

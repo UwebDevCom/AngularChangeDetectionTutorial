@@ -1,0 +1,13 @@
+:host {
+    display: block;
+}
+.total-todo
+{
+    display: block;
+    color: #e3e3e3;
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}

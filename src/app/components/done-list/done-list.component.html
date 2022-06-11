@@ -1,0 +1,12 @@
+<div class="title">
+    <h2>YOUR DONE'S LIST,</h2>
+</div>
+<ul>
+    <li *ngFor="let todo of (todos | filterByStatus: statusDone)">
+        <label class="container">
+            <span>{{todo.text}}</span>
+            <input (change)="moveToDo(todo.id)" type="checkbox" [checked]="true">
+            <span class="checkmark"></span>
+          </label>
+    </li>
+</ul>

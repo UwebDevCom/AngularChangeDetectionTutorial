@@ -1,0 +1,31 @@
+:host {
+    display: block;
+}
+
+h1 { 
+    font-size: 56px;
+    width: 120px;
+    color: #fff;
+    filter: drop-shadow(0 0 5px rgba(22, 17, 61, 0.6));
+}
+
+input
+{
+    padding: 10px 15px;
+    border: none;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius:  4px 0 0 4px;
+    font-size: 16px;
+}
+button 
+{
+    border: none;
+    background-color: cornflowerblue;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:  0 4px 4px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
