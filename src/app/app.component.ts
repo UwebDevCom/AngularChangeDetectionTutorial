@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, DoCheck, AfterViewChecked, OnDestro
  
   ngDoCheck() {
    if(this.counter < this.todos.length) {
-      this.counter = this.todos.length;
+      this.todos = this.todosService.todos;
     }
   };
 
@@ -49,5 +49,5 @@ export class AppComponent implements OnInit, DoCheck, AfterViewChecked, OnDestro
   ngOnDestroy(){
     clearInterval(this.timer);
   }
-
 }
+
